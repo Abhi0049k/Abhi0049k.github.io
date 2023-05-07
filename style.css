@@ -421,6 +421,9 @@ main{
     line-height: 22px;
 }
 
+#about.about.section{}
+#user-detail-intro{}
+
 #about .col .btns{
     margin-top: 40px;
 }
