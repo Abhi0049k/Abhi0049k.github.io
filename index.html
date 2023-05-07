@@ -10,23 +10,23 @@
 <body>
     <i class="fa-solid fa-bars" id="MenuBtn"></i>
 
-    <header id="Menu">
+    <header id="nav-menu">
         <div class="logo">
             <img src="./images/profile-pic.png" alt="Logo" width="50px">
         </div>
         <nav>
             <ul>
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
+                <li class="nav-link home"><a href="#home" class="active">Home</a></li>
+                <li class="nav-link about"><a href="#about">About</a></li>
+                <li class="nav-link resume"><a href="#resume">Resume</a></li>
+                <li class="nav-link home"><a href="#skills">Skills</a></li>
+                <li class="nav-link projects"><a href="#projects">Projects</a></li>
+                <li class="nav-link contact"><a href="#contact">Contact</a></li>
             </ul>
         </nav>
         <div class="social-icons">
-            <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="#" target="_blank"><i class="fa-brands fa-stack-overflow"></i></a>
-            <a href="#" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/mangalam-kumar-3236b3249?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BntjgWpOESHq0Kgdf%2BJFJew%3D%3D" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/Abhi0049k" target="_blank"><i class="fa-brands fa-github"></i></a>
         </div>
     </header>
 
@@ -34,19 +34,19 @@
 
         <section id="home" class="padding border">
             <div class="left-col">
-                <h4>
+                <h4 id="user-detail-name">
                     Mangalam Kumar
                 </h4>
                 <h1>
                     Hi, This is <span>Mangalam.</span><br> Backend Developer
                 </h1>
                 <p>I'm an Aspiring <span class="auto-input"></span></p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam sed aperiam. Lorem ipsum dolor sit.</p>
+                <p id="user-detail-intro">An aspiring full-stack developer specializing in Nodejs. Passionate about coding and learning new technologies.</p>
 
-                <a href="#" class="gloBtn">Download Resume</a>
+                <a href="https://drive.google.com/u/0/uc?id=1KBX-mD_4IkgJ2iBtHysMefq85xacqP82&export=download" class="gloBtn" id="resume-link-2">Download Resume</a>
             </div>
             <div class="right-col">
-                <img src="./images/profilepic.png">
+                <img src="./images/profilepic.png" class="home-img">
             </div>
         </section>
 
@@ -55,14 +55,268 @@
             <div class="col">
                 <h2 class="heading">About Me</h2>
                 <div class="divider"><li></li></div>
-                <p class="sub-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus amet quasi ratione iusto exercitationem deserunt, omnis officiis. Corporis maiores natus libero maxime quaerat corrupti, voluptate itaque mollitia. Sit eveniet atque eum dignissimos soluta neque, voluptates nemo enim sunt totam reprehenderit!</p>
-                <p class="sub-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolor unde est exercitationem corporis reiciendis ut velit tenetur sint iusto, adipisci similique repudiandae ea odit dolore itaque! Vel aliquid quam esse ad, quibusdam quod sint dolorem atque tenetur! Tenetur porro adipisci provident cum quo earum excepturi dolorum? Et, officia deleniti?</p>
-                <div class="btns">
-                    <a href="#" class="gloBtn">Hire Me</a>
-                    <a href="#" class="gloBtn">My Skills</a>
+                <p class="sub-para">I've a strong passion for web development, particularly backend development using Node.js. During my studies, I gained a solid understanding of programming fundamentals, data structures, and algorithms, which has given me a strong foundation to build upon.</p>
+                <p class="sub-para">My focus on backend development started during my coursework in web development in Masai School, where I was introduced to Node.js and fell in love with its simplicity and ease of use. I'm excited about the possibilities that Node.js offers in building fast and scalable web applications.</p>
+                <p class="sub-para">
+                    I'm a quick learner and a hard worker, with a strong desire to learn new technologies and develop my skills. I have experience working in teams and collaborating with others to achieve shared goals. I enjoy taking on challenges and solving problems, and I believe that my determination and persistence will be valuable assets in a professional setting.
+                </p>
+                <div class="btns center">
+                    <a href="https://drive.google.com/u/0/uc?id=1KBX-mD_4IkgJ2iBtHysMefq85xacqP82&export=download" class="gloBtn" id="resume-link-2">Resume</a>
+                    <a href="#skills" class="gloBtn" id="resume-link-1">My Skills</a>
+                </div>
+                <div class="img">
+                    <img src="images/profilepic.png" alt="">
                 </div>
             </div>
 
+        </section>
+
+        <section id="resume" class="about section padding border">
+
+            <h2 class="heading center">Know More About Me</h2>
+
+            <div class="res-row">
+                <div class="row-box">
+                    <h2>Summary</h2>
+                    <div class="info">
+                        <h3>Mangalam Kumar</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus excepturi pariatur sit velit explicabo sint officia totam, id labore voluptatibus quo voluptas corrupti quibusdam.</p>
+                        <ul>
+                            <li>Lucknow, Uttar Pradesh, India</li>
+                            <li>mangalamkumar2002@gmail.com</li>
+                            <li>9519196924</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row-box">
+                    <h2>Education</h2>
+                    <div class="info">
+                        <h3>Full Stack Web Development</h3>
+                        <p>Full Stack Web Development (Full Time) By Masai School</p>
+                        <p>11/2022 - Present | Bangalore, Karnataka, India</p>
+                    </div>
+                    <div class="info">
+                        <h3>Diploma in Computer Science</h3>
+                        <p>Government Leather Institute Agra</p>
+                        <p>08/2019 - 07/2022 | Agra, Uttar Pradesh, India</p>
+                    </div>
+                </div>
+
+                <div class="row-box">
+                    <h2>Few Projects</h2>
+                    <div class="info">
+                        <h3>Clone of Sugar Cosmetics</h3>
+                        <p>A Clone of an e-commerce</p>
+                        <p>Using: HTML | CSS | VanillaJs | NodeJs</p>
+                    </div>
+                    <div class="info">
+                        <h3>Clone of TripVillas</h3>
+                        <p>A Clone of a global rental platform</p>
+                        <p>Using: HTML | CSS | VanillaJs | NodeJs | ExpressJs | MongoDB</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="center">
+                <a href="https://drive.google.com/u/0/uc?id=1KBX-mD_4IkgJ2iBtHysMefq85xacqP82&export=download" class="gloBtn" id="resume-button-1">Resume</a>
+            </div>
+
+        </section>
+
+        <section id="skills" class="padding border">
+            <h2 class="heading center">My Skills</h2>
+            <p class="sub-para center">Welcome to my Skills section! Here, you'll find a list of the technical and soft skills that I've acquired throughout my journey.</p>
+            <div class="skill-col">
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <h4 class="skills-card-name">HTML</h4>
+                        <h4>90%</h4>
+                    </div>
+                    <div class="outer-line skills-card-img">
+                        <div class="inner-line" data-width="90"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <h4 class="skills-card-name">CSS</h4>
+                        <h4>75%</h4>
+                    </div>
+                    <div class="outer-line" class="outer-line skills-card-img">
+                        <div class="inner-line" data-width="75"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <h4 class="skills-card-name">Javascript</h4>
+                        <h4>75%</h4>
+                    </div>
+                    <div class="outer-line" class="outer-line skills-card-img">
+                        <div class="inner-line" data-width="75"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <h4 class="skills-card-name">Nodejs</h4>
+                        <h4>65%</h4>
+                    </div>
+                    <div class="outer-line" class="outer-line skills-card-img">
+                        <div class="inner-line" data-width="65"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <h4 class="skills-card-name">Expressjs</h4>
+                        <h4>75%</h4>
+                    </div>
+                    <div class="outer-line" class="outer-line skills-card-img">
+                        <div class="inner-line" data-width="75"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <h4 class="skills-card-name">MongoDB</h4>
+                        <h4>70%</h4>
+                    </div>
+                    <div class="outer-line" class="outer-line skills-card-img">
+                        <div class="inner-line" data-width="70"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="service" class="padding border">
+            <h2 class="heading center">My Services</h2>
+            <p class="sub-para center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex cupiditate Lorem <br> ipsum dolor sit. ipsa aliquid? Assumenda, porro incidunt.
+            </p>
+            <div class="ser-row">
+                <div class="ser-item">
+                    <div class="ser-info">
+                        <i class="fa-brands fa-slack"></i>
+                        <h2>Web Development</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime vitae sequi, voluptas dignissimos animi praesentium voluptatum nobis velit, consequatur amet labore eveniet atque dicta?</p>
+                    </div>
+                    <div class="hirebtn center">
+                        <a href="#" class="gloBtn" style="width: 80%">Hire Me</a>
+                    </div>
+                </div>
+                <div class="ser-item">
+                    <div class="ser-info">
+                        <i class="fa-brands fa-slack"></i>
+                        <h2>Web Development</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime vitae sequi, voluptas dignissimos animi praesentium voluptatum nobis velit, consequatur amet labore eveniet atque dicta?</p>
+                    </div>
+                    <div class="hirebtn center">
+                        <a href="#" class="gloBtn" style="width: 80%">Hire Me</a>
+                    </div>
+                </div>
+                <div class="ser-item">
+                    <div class="ser-info">
+                        <i class="fa-brands fa-slack"></i>
+                        <h2>Web Development</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime vitae sequi, voluptas dignissimos animi praesentium voluptatum nobis velit, consequatur amet labore eveniet atque dicta?</p>
+                    </div>
+                    <div class="hirebtn center">
+                        <a href="#" class="gloBtn" style="width: 80%">Hire Me</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="padding border">
+            <h2 class="sub-heading center">My Projects</h2>
+            <p class="sub-para center">
+                Welcome to my project section! Here, you'll find a collection of my recent work, including case studies, demos, and other projects <br> I've completed. Each project is a unique representation of my skills and expertise, and I'm excited to share them with you. <br> I hope you find them informative and inspiring, and please don't hesitate to contact me if you have any questions or would like to learn more. <br> Thank you for visiting!
+            </p>
+            <div class="port-row">
+                <div class="img-box">
+                    <div class="img">
+                        <img src="images/dailyObject.jpg" alt="">
+                    </div>
+                    <div class="img-info">
+                        <h3 class="project-title">Clone of DailyObjects</h3>
+                        <div>
+                            <p class="project-description">I've created this website as a tribute to the popular e-commerce platform DailyObjects that offers high-quality products for daily use.</p>
+                            <p class="project-tech-stack">HTML | CSS | VanillaJs</p>
+                            <a href="https://github.com/Abhi0049k/stark-business-7502" class="project-github-link"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://inquisitive-froyo-761ed8.netlify.app/" class="project-deployed-link"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="images/sugar.jpg" alt="">
+                    </div>
+                    <div class="img-info">
+                        <h3 class="project-title">Clone of Sugar Cosmetics</h3>
+                        <div>
+                            <p class="project-description">We've created this website as a tribute to the popular e-commerce platform Sugar that offers high-quality products for women.</p>
+                            <p class="project-tech-stack">HTML | CSS | VanillaJs | NodeJs</p>
+                            <a href="https://github.com/Sonu-Shettiyar/bright-stamp-7114" class="project-github-link"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://gleeful-lily-870fcb.netlify.app/" class="project-deployed-link"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="images/tripvillas.png" alt="">
+                    </div>
+                    <div class="img-info">
+                        <h3 class="project-title">Clone of TripVillas</h3>
+                        <div>
+                            <p class="project-description">I've created this website as a tribute to the popular global rental platform TripVillas that offers rental properties for vacations.</p>
+                            <p class="project-tech-stack">HTML | CSS | VanillaJs | NodeJs | ExpressJs | MongoDB</p>
+                            <a href="https://github.com/Abhi0049k/ready-lock-9044" class="project-github-link"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://nimble-starburst-6bbdd4.netlify.app/" class="project-deployed-link"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <div class="img">
+                        <img src="images/to-do-list-apps.png" alt="">
+                    </div>
+                    <div class="img-info">
+                        <h3 class="project-title">Todo App</h3>
+                        <div>
+                            <p class="project-description">Introducing my Todo app - the perfect solution for keeping track of your tasks and staying organized</p>
+                            <p class="project-tech-stack">HTML | CSS | VanillaJs | NodeJs | ExpressJs | MongoDB</p>
+                            <a href="https://github.com/Abhi0049k/FrontendTodo" class="project-github-link"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://peaceful-gelato-f8f08e.netlify.app/" class="project-deployed-link"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="center">
+                <a href="https://github.com/Abhi0049k" class="gloBtn" style="width: 250px">Checkout My Github</a>
+            </div>
+        </section>
+
+        <section id="contact" class="padding">
+            <div class="cont-row">
+                <div class="cont-info">
+                    <h2 class="heading">Contact Me</h2>
+                    <p class="sub-para">If you have any questions, comments, or business inquiries, I would love to hear from you! Please feel free to send me a message using the contact form, and I will get back to you as soon as possible. Thank you for your interest, and I look forward to connecting with you!</p>
+                    <div class="icon-list">
+                        <p><i class="fa-solid fa-location-dot"></i> Lucknow, Uttar Pradesh, India</p>
+                        <p><i class="fa-solid fa-envelope-open-text"></i><a href="mailto:mangalamkumar2002@gmail.com" id="contact-phone">mangalamkumar2002@gmail.com</a></p>
+                        <p><i class="fa-solid fa-phone"></i><a href="tel:+91-9519196924" id="contact-phone">+91-9519196924</a></p>
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/mangalam-kumar-3236b3249?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BntjgWpOESHq0Kgdf%2BJFJew%3D%3D" id="contact-linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Abhi0049k" id="contact-github"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="cont-form">
+                    <form>
+                        <input type="text" name="name" id="name" required placeholder="Your Name">
+                        <input type="email" name="email" id="email" required placeholder="Your Email">
+                        <input type="text" name="subject" id="subject" required placeholder="Subject">
+                        <textarea name="msg" id="msg" rows="8" required placeholder="Type Message Here..."></textarea>
+                        <input type="submit" value="Send Message">
+                    </form>
+                </div>
+            </div>
         </section>
 
     </main>
