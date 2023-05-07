@@ -957,6 +957,9 @@ main{
 }
 
 @media only screen and (max-width:950px){
+    #contact {
+        height: fit-content;
+    }
     #contact .cont-row{
         flex-direction: column;
         gap: 40px;
