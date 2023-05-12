@@ -1,49 +1,56 @@
-let MenuBtn = document.getElementById('MenuBtn');
+/*===== MENU SHOW =====*/ 
+const showMenu = (toggleId, navId) =>{
+    const toggle = document.getElementById(toggleId),
+    nav = document.getElementById(navId)
 
+    if(toggle && nav){
+        toggle.addEventListener('click', ()=>{
+            nav.classList.toggle('show')
+        })
+    }
+}
+showMenu('nav-toggle','nav-menu')
 
-MenuBtn.addEventListener('click', function(){
-    document.querySelector('body').classList.toggle('menuActive');
-    MenuBtn.classList.toggle('fa-xmark');
-})
+/*==================== REMOVE MENU MOBILE ====================*/
+const navLink = document.querySelectorAll('.nav__link')
 
+function linkAction(){
+    const navMenu = document.getElementById('nav-menu')
+    // When we click on each nav__link, we remove the show-menu class
+    navMenu.classList.remove('show')
+}
+navLink.forEach(n => n.addEventListener('click', linkAction))
 
-let type = new Typed('.auto-input', {
-    strings: ['Backend Developer...', 'Nodejs Developer...', 'Javascript Developer...', 'Full Stack Web Developer...'],
-    typeSpeed: 100,
-    backSpeed: 50,
-    backDelay: 2000,
-    loop: true
-})
+/*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
+const sections = document.querySelectorAll('section[id]')
 
-// Skill Section Start
+function scrollActive(){
+    const scrollY = window.pageYOffset
 
-const progressBars = document.querySelectorAll('.inner-line');
+    sections.forEach(current =>{
+        const sectionHeight = current.offsetHeight
+        const sectionTop = current.offsetTop - 50;
+        sectionId = current.getAttribute('id')
 
-window.addEventListener('scroll', function(){
-    progressBars.forEach(function(progressBar){
-        const rect = progressBar.getBoundingClientRect();
-        if(rect.top < window.innerHeight && rect.bottom >= 0){
-            const width = progressBar.getAttribute('data-width');
-            progressBar.style.width = width+'%';
+        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active')
+        }else{
+            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active')
         }
-    });
+    })
+}
+window.addEventListener('scroll', scrollActive)
+
+/*===== SCROLL REVEAL ANIMATION =====*/
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '60px',
+    duration: 2000,
+    delay: 200,
+//     reset: true
 });
 
-
-let navLinks = document.querySelectorAll('header nav ul li a');
-console.log(navLinks)
-let sections = document.querySelectorAll('section');
-
-window.addEventListener('scroll', ()=>{
-    const scrollPos = window.scrollY + 10
-    sections.forEach(section => {
-        if(scrollPos > section.offsetTop && scrollPos < (section.offsetTop + section.offsetHeight)){
-            navLinks.forEach(link=>{
-                link.classList.remove('active');
-                if(section.getAttribute('id')===link.getAttribute('href').substring(1)){
-                    link.classList.add('active');
-                }
-            });
-        }
-    });
-});
+sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text',{}); 
+sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400}); 
+sr.reveal('.home__social-icon',{ interval: 200}); 
+sr.reveal('.skills-card, .project-card, .contact__input, .stats_card, .contact_tag',{interval: 200}); 
