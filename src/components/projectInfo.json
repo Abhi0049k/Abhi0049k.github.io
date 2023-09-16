@@ -1,0 +1,90 @@
+[
+    {
+        "name": "Everyday Needs",
+        "desc": "Clone of an e-commerce website called DailyObjects, which basically focuses on selling mobile covers, backpacks and watchbands",
+        "tech": [
+            "HTML5","CSS3","JavaScript","MongoDB","Express.js","Node.js","Netlify"
+        ],
+        "furl": "https://inquisitive-froyo-761ed8.netlify.app/",
+        "img": "https://raw.githubusercontent.com/Abhi0049k/Everyday-Needs/main/frontend/icon/Everyday%20needs-logos.jpeg",
+        "gurl": "https://github.com/Abhi0049k/Everyday-Needs"
+    },
+    {
+        "name": "Talkative Tribe",
+        "desc": "One of the key features of Talkative Tribe is the ability to create dedicated chat rooms.",
+        "tech": [
+            "HTML5","CSS3","JavaScript","Netlify","Express.js","Passport.js","NPM","JWT","Node.js","MongoDB","Nodemailer","Google Oauth","Render","Axios","Googleapis"
+        ],
+        "furl": "https://cute-croissant-2a6b2d.netlify.app/",
+        "img": "https://cdn.dribbble.com/users/267404/screenshots/3713416/talkup.png",
+        "gurl": "https://github.com/Abhi0049k/Talkative-Tribe"
+    },
+    {
+        "name": "Tripping.com",
+        "desc": "Your Tripping.com is a clone of TripVillas which is a web-based platform that allows users to discover and book vacation rental properties for their getaways globally.",
+        "tech": [
+            "HTML5","CSS3","JavaScript","Node.js","Express.js","MongoDB","NPM","JWT","Netlify","Render"
+        ],
+        "furl": "https://nimble-starburst-6bbdd4.netlify.app/",
+        "img": "https://camo.githubusercontent.com/89bd067ffd2cfa2db050ec3256e0e29b0bab1abc31d6faa6a8b4c938f57b549b/68747470733a2f2f6e696d626c652d7374617262757273742d3662626464342e6e65746c6966792e6170702f696d67732f6272616e642e706e67",
+        "gurl": "https://github.com/Abhi0049k/ready-lock-9044"
+    },
+    {
+        "name": "Code Converter",
+        "desc": "Seamlessly convert code snippets between multiple programming languages. Identify and troubleshoot bugs with step-by-step debugging and stack trace analysis. Ensure code adheres to industry best practices and coding standards.",
+        "tech": [
+            "React.js","Tailwind CSS", "Node.js","Express.js","OpenAI"
+        ],
+        "furl": "https://code-converter-debugger-quality-checker-frontend.vercel.app/",
+        "img": "https://i1.wp.com/convertcodes.com/wp-content/uploads/2018/10/convertcodes-2.png?fit=2820%2C1200&ssl=1",
+        "gurl": "https://github.com/Abhi0049k/Code-Converter-Debugger-QualityChecker"
+    },
+    {
+        "name": "URL Shortener",
+        "desc": "URL shortener is a cutting-edge and user-friendly URL shortening service designed to simplify and optimize your web experience.",
+        "tech": [
+            "HTML5","CSS3","JavaScript","Netlify","Express.js","NPM","Node.js","Redis","Cyclic.sh"
+        ],
+        "furl": "https://gilded-croquembouche-6f562a.netlify.app/",
+        "img": "https://d19fbfhz0hcvd2.cloudfront.net/PR/wp-content/uploads/2016/09/10_UsingURLShorteners-777x437.jpg",
+        "gurl": "https://github.com/Abhi0049k/URL-Shortener"
+    },
+    {
+        "name": "Task Management System",
+        "desc": "Task Management App is a Application which helps the user to manage his/her tasks and increase their productivity.",
+        "tech": [
+            "Node.js",
+            "Express.js",
+            "React.js",
+            "MongoDB",
+            "CSS3"
+        ],
+        "furl": "https://guileless-cobbler-8ed7bb.netlify.app/",
+        "img": "https://www.pngitem.com/pimgs/m/245-2456104_png-transparent-icon-todo-list-png-download.png",
+        "gurl": "https://github.com/Abhi0049k/Task-Management-App"
+    },
+    {
+        "name": "Beauty Bliss",
+        "desc": "Clone of an e-commerce website called Sugar Cosmetics, which basically focuses on selling cosmetics",
+        "tech": [
+            "Node.js",
+            "HTML5",
+            "CSS3",
+            "JavaScript"
+        ],
+        "furl": "https://gleeful-lily-870fcb.netlify.app/",
+        "img": "https://1000logos.net/wp-content/uploads/2020/07/SUGAR-Cosmetics-Logo.jpg",
+        "gurl": "https://github.com/Sonu-Shettiyar/SugarCosmetics-Clone"
+    },
+    {
+        "name": "Portfolio",
+        "desc": "Welcome to my portfolio! Explore my projects and reach out to connect and collaborate.",
+        "tech": [
+            "React.js",
+            "Tailwind CSS"
+        ],
+        "furl": "https://abhi0049k.github.io",
+        "img": "https://fontawesome.com/social/code?f=classic&s=&v=5",
+        "gurl": "https://github.com/Abhi0049k/Abhi0049k.github.io"
+    }
+]
