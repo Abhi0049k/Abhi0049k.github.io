@@ -1,17 +1,39 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import type { Metadata, Viewport } from "next";
+import { Space_Grotesk, Inter, IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  weight: ["500", "700"],
+  variable: "--font-space-grotesk",
+  display: "swap",
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
+  variable: "--font-inter",
+  display: "swap",
+});
+
+const ibmPlexMono = IBM_Plex_Mono({
+  subsets: ["latin"],
+  weight: ["500", "600"],
+  variable: "--font-ibm-plex-mono",
+  display: "swap",
+});
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+  viewportFit: "cover",
+};
 
 export const metadata: Metadata = {
-  title: "Mangalam's Showcase",
-  description: "I'm deeply passionate about web development, with a strong focus on backend development using Node.js. My academic background has equipped me with a solid understanding of programming, data structures, and algorithms. My journey into backend development began at Masai School, where I was introduced to Node.js, and I was immediately captivated by its potential for creating fast and scalable web applications. I'm known for being a quick learner and for excelling in collaborative teams, where I enthusiastically take on complex challenges with unwavering determination. Additionally, I possess expertise in prompt engineering and crafting AI-powered solutions, contributing to innovation in the world of technology.",
-  icons: {
-    icon: [
-      { url: './fevicon.ico' },
-    ]
-  }
+  title: "Mangalam Kumar — Technical Mentor · System Architect",
+  description:
+    "Mangalam Kumar builds multi-agent pipelines and automation systems — from scheduling thousands of interviews to generating full websites with AI agents that hand off work to each other.",
 };
 
 export default function RootLayout({
@@ -20,8 +42,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html
+      lang="en"
+      className={`${inter.variable} ${spaceGrotesk.variable} ${ibmPlexMono.variable}`}
+    >
+      <body className="font-sans bg-paper text-ink min-h-screen overflow-x-hidden antialiased">
+        {children}
+      </body>
     </html>
   );
 }
