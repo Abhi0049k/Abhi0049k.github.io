@@ -4,16 +4,33 @@ This portfolio site is configured for **Static Export (`output: 'export'`)** and
 
 ---
 
-## 1. Static Export Architecture
+## 1. Custom Domain (`mangalam0015k.in`)
 
-- **Next.js Version**: 14+ App Router (`output: 'export'`).
-- **No Request-Time Server**: The site builds into purely static HTML, CSS, and JS assets in the `out/` directory.
-- **Image Optimization**: Configured with `images: { unoptimized: true }` in `next.config.mjs`.
-- **Content Updates**: Content is driven by static definitions in `lib/content.ts`. Because GitHub Pages serves static files without a Node.js server or dynamic ISR revalidation, **any content updates require a rebuild and redeployment (`yarn build`) to take effect**.
+- **CNAME Configuration**: `public/CNAME` contains `mangalam0015k.in`.
+- **Root Serving**: The site serves directly from the domain root (`https://mangalam0015k.in/`). No `basePath` or `assetPrefix` is required.
+- **Next.js Output**: `yarn build` automatically outputs `out/CNAME` containing `mangalam0015k.in`.
+
+### Manual DNS Configuration (Registrar Side)
+
+Point your domain (`mangalam0015k.in`) to GitHub Pages by configuring DNS records at your domain registrar:
+
+1. **A Records** (for apex `@` domain):
+   - `185.199.108.153`
+   - `185.199.109.153`
+   - `185.199.110.153`
+   - `185.199.111.153`
+
+2. **CNAME Record** (for `www` subdomain):
+   - Host: `www`
+   - Value: `Abhi0049k.github.io`
+
+3. **HTTPS Enforcement**:
+   - In GitHub repo **Settings > Pages > Custom domain**, verify `mangalam0015k.in`.
+   - Once DNS propagation completes, check **"Enforce HTTPS"**.
 
 ---
 
-## 2. GitHub Pages Deployment
+## 2. GitHub Pages Deployment Workflow
 
 Continuous Deployment is managed via `.github/workflows/deploy.yml`:
 
@@ -27,15 +44,7 @@ Continuous Deployment is managed via `.github/workflows/deploy.yml`:
 
 ---
 
-## 3. Custom Domain Configuration
-
-- A `public/CNAME` file exists with `mangalam.dev`.
-- Next.js automatically copies `public/CNAME` into `out/CNAME` during build.
-- **GitHub Repository Settings**: Ensure GitHub Pages is set to use GitHub Actions under **Settings > Pages > Build and deployment > Source: GitHub Actions**.
-
----
-
-## 4. Local Build Verification
+## 3. Local Build Verification
 
 To test the static export locally before committing:
 
