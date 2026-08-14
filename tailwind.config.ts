@@ -36,9 +36,24 @@ const config: Config = {
       boxShadow: {
         hard: "4px 4px 0px #15111F",
         "hard-lg": "6px 6px 0px #15111F",
+        "hard-paper": "4px 4px 0px #FAF8FF",
+        "hard-violet": "4px 4px 0px #5B2EFF",
       },
       maxWidth: {
         maxw: "1180px",
+      },
+      letterSpacing: {
+        display: "-0.035em",
+        tight: "-0.02em",
+      },
+      fontSize: {
+        display: "clamp(3rem, 9vw, 6rem)",
+      },
+      backgroundImage: {
+        "blueprint-light":
+          "radial-gradient(rgba(21,17,31,0.55) 1px, transparent 1.5px)",
+        "blueprint-dark":
+          "radial-gradient(rgba(250,248,255,0.07) 1px, transparent 1.5px)",
       },
     },
   },

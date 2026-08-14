@@ -34,6 +34,40 @@
   }
 }
 
+@layer utilities {
+  /* Blueprint dotted texture */
+  .texture-light {
+    background-image:
+      radial-gradient(rgba(21, 17, 31, 0.28) 1px, transparent 1.5px),
+      linear-gradient(#FAF8FF, #FAF8FF);
+    background-size: 22px 22px, auto;
+    background-repeat: repeat, repeat;
+    background-blend-mode: normal, normal;
+  }
+
+  .texture-dark {
+    background-image:
+      radial-gradient(rgba(250, 248, 255, 0.09) 1px, transparent 1.5px),
+      linear-gradient(#15111F, #15111F);
+    background-size: 24px 24px, auto;
+  }
+
+  /* Rail: horizontal rule with active colored segment */
+  .rail {
+    height: 1.5px;
+    background: linear-gradient(
+      to right,
+      var(--rail-from, #15111F) 0%,
+      var(--rail-from, #15111F) var(--rail-to, 100%),
+      rgba(21, 17, 31, 0.16) var(--rail-to, 100%)
+    );
+  }
+
+  .clip-notch {
+    clip-path: polygon(0 0, calc(100% - 14px) 0, 100% 14px, 100% 100%, 0 100%);
+  }
+}
+
 /* Scroll reveal utility classes */
 .reveal {
   opacity: 0;
